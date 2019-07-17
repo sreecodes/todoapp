@@ -1,28 +1,38 @@
 <html>
 <head>
     <title>ToDo App</title>
+    <style> 
+    body {
+      background-color: olive;
+    }
+    
+    }
+    </style>
+    <script>
+
+        function toDo() {
+
+            var add = "<li>" + document.getElementById("my input").value + "</li>";
+            document.getElementById("my list").innerHTML += add;
+        }
+
+         </script>
 </head>
 
 <body>
 <div id="first" class="header">
-    <h2>My ToDo List</h2>
-    <input type="text" id="my input" placeholder="Add items">
-    <button>ADD</button><button>Remove</button>
+    <h2>Sri ToDo List</h2>
+    <input type="text" id="my input" placeholder="Add Task">
+    <button type="button" onclick="toDo()">ADD</button>
+   
+    
     
 </div>
 
 
-<ul id="my list">
-    <li><input type="checkbox"> Hit the Gym </li>
-    <li><input type="checkbox">Pay bills</li>
-    <li><input type="checkbox">Meet frnds</li>
-    <li><input type="checkbox">Buy food</li>
-    <li><input type="checkbox">Read a book</li>
-    <li><input type="checkbox">Organize trip</li>
-  </ul>
-<script>
- 
- </script>
+<ul id="my list" > My Task
+  
+</ul>
 
 </body>
 
